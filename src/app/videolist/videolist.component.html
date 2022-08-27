@@ -1,0 +1,26 @@
+
+<table datatable [dtOptions]="dtOptions" class="row-border hover">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>player</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let ss of safeSrc2; last as isLast">
+  <td width="150px">
+    
+	  {{ss}}
+	 
+ </td>
+  <td width="600px">
+   
+    <iframe [src]="ss" width="760" height="415" frameborder="0" webkitallowfullscreen mozallowfullscreen
+            allowfullscreen></iframe>
+
+</td>
+<td><app-video></app-video></td>
+</tr>
+  </tbody>
+</table>
